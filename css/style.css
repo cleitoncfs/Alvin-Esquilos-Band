@@ -1,0 +1,449 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Work+Sans:wght@300&display=swap");
+
+/* Reset CSS básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilizando a imagem do cabeçalho */
+#image_header {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo geral do cabeçalho */
+.header {
+  background-color: #83bdbe;
+  color: #223240;
+  text-align: center;
+  padding: 20px 0;
+  font-family: "Sedgwick Ave Display", cursive;
+}
+
+header#cabecalho h1 {
+  font-size: 2em;
+  color: #606060;
+  margin-bottom: 10px;
+}
+
+/* Estilo geral para a navegação */
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Sedgwick Ave Display", cursive;
+}
+
+/* Estilizando a Navbar */
+.topnav {
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 17pt;
+  color: #888888;
+  background-color: #223240;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  padding: 10px 0;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topnav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+}
+
+.topnav ul li {
+  margin-right: 20px;
+}
+
+.topnav ul li a {
+  text-decoration: none;
+  color: #888888;
+  padding: 10px 20px;
+}
+
+.topnav ul li a:hover {
+  background-color: #83bdbe;
+  border-radius: 5px;
+}
+
+/* Alinhando o campo de pesquisa à direita */
+.search-container {
+  position: relative;
+  margin-left: auto;
+}
+
+.search-container input.inputPesquisa {
+  padding: 10px 20px 10px 40px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.search-container input.inputPesquisa:focus {
+  border-color: #83bdbe;
+}
+
+.search-container i.fa-search {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888888;
+  font-size: 16px;
+}
+
+.search-container input.inputPesquisa::placeholder {
+  color: #888888;
+}
+
+/* Interface principal */
+#interface {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid de colunas */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.coluna4,
+.coluna8 {
+  padding: 10px;
+}
+
+.coluna4 {
+  flex: 1 1 33%;
+}
+
+.coluna8 {
+  flex: 1 1 66%;
+}
+
+/* Seção 1 */
+#section1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#section1 .coluna4 {
+  max-width: 40%;
+}
+
+#section1 .coluna8 {
+  max-width: 60%;
+}
+
+#section1 h2 {
+  font-size: 24px;
+  color: #223240;
+  margin-bottom: 15px;
+  font-family: "Sedgwick Ave Display", cursive;
+  text-align: center;
+}
+
+#section1 p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #606060;
+  text-align: justify;
+  font-family: "Work Sans", sans-serif;
+}
+
+#section1 img {
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+}
+
+.btn-saiba-mais {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #83bdbe;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-saiba-mais:hover {
+  background-color: #223240;
+}
+
+/* Seção 2 - Discografia */
+#section2 {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#section2 .coluna4 {
+  text-align: center;
+  padding: 15px;
+}
+
+#section2 h2 {
+  font-size: 1.5em;
+  color: #223240;
+  margin-bottom: 15px;
+}
+
+#section2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  #section2 .coluna4 {
+    max-width: 100%;
+  }
+
+  #section2 h2 {
+    font-size: 1.3em;
+  }
+}
+
+/* Estilização do Formulário de contato */
+.contactos {
+  background-color: #223240;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.contactos i {
+  margin: 10px 0;
+  display: inline-block;
+}
+
+form {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+}
+
+form input[type="range"] {
+  width: 100%;
+}
+
+form button {
+  background-color: #83bdbe;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #223240;
+}
+
+/* Estilização do Rodapé */
+footer#rodape {
+  background-color: #83bdbe;
+  padding: 20px 0;
+  text-align: center;
+  color: #606060;
+}
+
+footer#rodape p {
+  margin: 0;
+}
+
+/* Menu Hambúrguer */
+.menu-hamburger {
+  display: none; /* Oculta por padrão */
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 10px;
+}
+
+.menu-hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px auto;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-hamburger.active span {
+  background-color: #83bdbe;
+}
+
+/* Menu Hambúrguer-Menu */
+.menu-hamburger-menu {
+  display: none; /* Oculta por padrão */
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 250px;
+  background-color: #223240;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.menu-hamburger-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-hamburger-menu li {
+  border-bottom: 1px solid #fff;
+}
+
+.menu-hamburger-menu a {
+  display: block;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-hamburger-menu a:hover {
+  background-color: #83bdbe;
+}
+
+/* Exibir o menu hambúrguer em telas pequenas */
+@media screen and (max-width: 768px) {
+  .topnav {
+    display: none; /* Oculta a navegação normal em telas pequenas */
+  }
+
+  .menu-hamburger {
+    display: block; /* Exibe o menu hambúrguer */
+  }
+
+  .menu-hamburger-menu.active {
+    display: block; /* Exibe o menu quando ativo */
+  }
+
+  #section1,
+  #section2 {
+    flex-direction: column;
+  }
+
+  #section1 .coluna4,
+  #section1 .coluna8,
+  #section2 .coluna4 {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  #section1 p {
+    text-align: center;
+  }
+
+  #section2 h2 {
+    font-size: 1.3em;
+  }
+}
+
+/* Estilo do rodapé */
+footer {
+  background-color: #223240;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #83bdbe;
+}
+
+.footer-social {
+  margin: 15px 0;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #83bdbe;
+}
+
+.footer-copy {
+  margin: 0;
+  font-size: 14px;
+  color: #ccc;
+}

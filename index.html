@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alvin e os Esquilos</title>
+    <meta name="author" content="Alvin e os Esquilos" />
+    <meta
+      name="description"
+      content="Quando a árvore em que moram é derrubada e enviada para Los Angeles, os esquilos falantes Alvin, Simon e Theodore encontram um novo lar na casa do compositor Dave Seville (Antti Jaakola)."
+    />
+    <script
+      src="https://kit.fontawesome.com/d132031da6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
+
+  <body>
+    <header id="cabecalho">
+      <hgroup>
+        <div class="header">
+          <h1>Alvin e os Esquilos Band</h1>
+        </div>
+
+        <nav class="topnav">
+          <!-- Modificado para usar <nav> -->
+          <ul>
+            <li><a href="#cabecalho" target="_blank">Home</a></li>
+            <li><a href="#section1" target="_blank">A Banda</a></li>
+            <li><a href="#section2" target="_blank">Discografia</a></li>
+            <li><a href="#contactos" target="_blank">Contacto</a></li>
+            <li id="float-right" class="search-container">
+              <i class="fas fa-search"></i>
+              <input
+                class="inputPesquisa"
+                type="text"
+                placeholder="Pesquisar..."
+              />
+            </li>
+          </ul>
+        </nav>
+
+        <div class="menu-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <img
+          id="image_header"
+          src="images/Principal.jpg.png"
+          alt="Imagem cabeçalho"
+        />
+      </hgroup>
+    </header>
+
+    <!-- Menu hambúrguer para dispositivos móveis -->
+    <div class="menu-hamburger-menu">
+      <ul>
+        <li><a href="#cabecalho" target="_blank">Home</a></li>
+        <li><a href="#section1" target="_blank">A Banda</a></li>
+        <li><a href="#section2" target="_blank">Discografia</a></li>
+        <li><a href="#contactos" target="_blank">Contacto</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <section id="section1" class="row">
+        <div class="coluna4 col-4">
+          <img
+            id="image_header"
+            src="images/Alvineosesquilosband.png"
+            alt="Imagem da banda"
+            width="100%"
+          />
+        </div>
+        <div class="coluna8 col-8">
+          <h2>Como surgiu a banda:</h2>
+          <p>
+            "Alvin e os Esquilos" Quando a árvore em que moram é derrubada e
+            enviada para Los Angeles, os esquilos falantes Alvin, Simon e
+            Theodore encontram um novo lar na casa do compositor Dave Seville
+            (Antti Jaakola). Apesar de um início conturbado com a nova situação
+            doméstica, Dave descobre que as criaturas travessas sabem cantar
+            muito bem. Os esquilos assinam um contrato com uma gravadora e logo
+            descobrem o preço da fama.
+          </p>
+          <a
+            href="https://pt.wikipedia.org/wiki/Alvin_e_os_Esquilos"
+            target="_blank"
+          >
+            <button class="btn-saiba-mais">Saiba Mais</button>
+          </a>
+        </div>
+      </section>
+      <section id="section2" class="row">
+        <div class="coluna4 col-4">
+          <h2>Alvin & The Chipmunks</h2>
+          <img src="images/Alvineosesquilos1.jpg" alt="Alvin & The Chipmunks" />
+        </div>
+        <div class="coluna4 col-4">
+          <h2>Na Estrada</h2>
+          <img src="images/Alvineosesquilos2.jpg" alt="Na Estrada" />
+        </div>
+        <div class="coluna4 col-4">
+          <h2>Naufragados</h2>
+          <img src="images/Alvineosesquilos3.jpg" alt="Naufragados" />
+        </div>
+      </section>
+
+      <section class="contactos">
+        <div id="contactos">
+          <h2>Contactos</h2>
+        </div>
+        <div id="telefone"><i class="fas fa-phone"></i> 123 456 789</div>
+        <div id="mail">
+          <i class="fas fa-envelope"></i> esquilosband@fox.com
+        </div>
+        <div id="morada">
+          <i class="fas fa-map-marker-alt"></i> Rua das Nozes, S/N
+        </div>
+      </section>
+
+      <section>
+        <h2>Envie uma mensagem</h2>
+        <form>
+          <label for="text_name">Nome:</label>
+          <input type="text" id="text_name" name="nome" /><br />
+
+          <label for="e-mail">E-mail:</label>
+          <input type="email" name="e-mail" id="e-mail" /><br />
+
+          <label for="phone">Telefone:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="telefone"
+            placeholder="123-456-789"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+          /><br />
+
+          <label for="mensagem">Mensagem:</label><br />
+          <textarea id="mensagem" cols="30" rows="5" name="descricao"></textarea
+          ><br />
+
+          <label for="range">Numa escala de 1 a 10, como avalia a banda?</label
+          ><br />
+          <input type="range" id="range" name="range" min="0" max="10" /><br />
+
+          <hr />
+          <button type="submit" alt="Enviar">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <ul class="footer-links">
+        <li><a href="#cabecalho" target="_blank">Home</a></li>
+        <li><a href="#section1" target="_blank">A Banda</a></li>
+        <li><a href="#section2" target="_blank">Discografia</a></li>
+        <li><a href="#contactos" target="_blank">Contacto</a></li>
+      </ul>
+
+      <div class="footer-social">
+        <a href="https://facebook.com" target="_blank" class="social-icon"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://twitter.com" target="_blank" class="social-icon"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://instagram.com" target="_blank" class="social-icon"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://linkedin.com" target="_blank" class="social-icon"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+      </div>
+
+      <p class="footer-copy">
+        &copy; 2024 Alvin e os Esquilos Band. Todos os direitos reservados.
+      </p>
+    </footer>
+  </body>
+</html>
